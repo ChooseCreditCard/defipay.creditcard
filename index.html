@@ -4,268 +4,234 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <title>DefiPay.Creditcard – DeFi Balances to Card Payments</title>
-  <meta name="description"
-        content="DefiPay.creditcard explains how DeFi wallets, stablecoins and yield strategies connect to normal card payments on Visa/Mastercard rails." />
+  <title>DefiPay.Creditcard – DeFi-Linked Card Payments Explained</title>
+  <meta name="description" content="DefiPay.creditcard explains how decentralized finance integrates with credit and debit card payments: stablecoin routes, yield wallets, settlement flows and risks." />
   <meta name="robots" content="index,follow" />
   <link rel="canonical" href="https://defipay.creditcard/" />
 
   <!-- Open Graph -->
-  <meta property="og:title" content="DefiPay.Creditcard – DeFi to Card Payments Explained" />
-  <meta property="og:description"
-        content="From DeFi wallets and stablecoins to everyday card spend – how value flows from chains onto payment rails." />
+  <meta property="og:title" content="DefiPay.Creditcard – DeFi & Credit Cards Explained" />
+  <meta property="og:description" content="Learn how DeFi-backed cards work: smart-contract wallets, stablecoin conversion, yield accounts and on/off-ramp flows." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://defipay.creditcard/" />
-  <meta property="og:image" content="https://defipay.creditcard/preview.png" />
+  <meta property="og:image" content="https://choose.creditcard/preview.png?utm_source=defipay.creditcard&utm_medium=referral&utm_campaign=og_image" />
 
-  <!-- Styles -->
-  <link rel="stylesheet" href="/styles.css" />
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="DefiPay.Creditcard – DeFi & Credit Cards Explained" />
+  <meta name="twitter:description" content="Independent breakdown of DeFi-linked card systems, stablecoin conversion and yield routing." />
+  <meta name="twitter:image" content="https://choose.creditcard/preview.png?utm_source=defipay.creditcard&utm_medium=referral&utm_campaign=twitter_image" />
 
   <!-- GA4 -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-64FE63JQ3H"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){ dataLayer.push(arguments); }
+    function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-    gtag('config','G-64FE63JQ3H');
+    gtag('config', 'G-64FE63JQ3H');
   </script>
+
+  <link rel="stylesheet" href="./styles.css" />
 </head>
-
 <body class="bg-slate-950 text-slate-100">
-
-  <!-- HEADER – unified CC -->
   <header class="site-header">
     <div class="nav-inner max-w-6xl">
       <div class="brand">
         <div class="cc-logo">CC</div>
         <div class="brand-text">
-          <span class="brand-title">DefiPay.creditcard</span>
-          <span class="brand-subtitle">DeFi · Stablecoins · Card rails</span>
+          <div class="brand-title">DefiPay.Creditcard</div>
+          <div class="brand-subtitle">DeFi-Linked Card Payments Explained</div>
         </div>
       </div>
-
       <nav class="nav-links">
-        <a href="https://fin.creditcard/?utm_source=defipay.creditcard&utm_medium=nav&utm_campaign=collection">
-          Collection
-        </a>
-        <a href="https://tech.creditcard/?utm_source=defipay.creditcard&utm_medium=nav&utm_campaign=tech">
-          Tech
-        </a>
-        <a href="https://cryptopay.creditcard/?utm_source=defipay.creditcard&utm_medium=nav&utm_campaign=cryptopay">
-          CryptoPay
-        </a>
-        <a href="https://choose.creditcard/?utm_source=defipay.creditcard&utm_medium=nav&utm_campaign=choose">
-          Choose
-        </a>
+        <a href="#overview">Overview</a>
+        <a href="#mechanics">Mechanics</a>
+        <a href="#compare">Compare</a>
       </nav>
     </div>
   </header>
 
   <main class="cc-page">
+    <!-- Breadcrumb -->
+    <div class="cc-breadcrumb">
+      <a href="https://choose.creditcard/?utm_source=defipay.creditcard&utm_medium=referral&utm_campaign=breadcrumb">Home</a>
+      &nbsp;›&nbsp;
+      DeFi-Linked Cards
+    </div>
 
-    <p class="cc-breadcrumb">DefiPay.creditcard · DeFi · Stablecoins · Payment rails</p>
-
-    <!-- HERO -->
+    <!-- Hero -->
     <section class="hero">
-      <h1>DeFi Balances, Everyday Card Spend</h1>
-      <p class="hero-lead">
-        How DeFi wallets, stablecoins and yield strategies connect to ordinary card payments
-        on Visa/Mastercard rails.
-      </p>
-      <a class="cta"
-         href="https://choose.creditcard/?utm_source=defipay.creditcard&utm_medium=referral&utm_campaign=defipay_top">
-        Compare DeFi &amp; Crypto-Friendly Cards
-      </a>
-    </section>
-
-    <!-- What is DefiPay -->
-    <section class="section">
-      <h2>What is “DeFi pay” in card terms?</h2>
-      <p class="small">
-        DefiPay is about using value held in DeFi – wallets, LP tokens, lending markets, yield strategies –
-        to fund everyday card transactions. The card payment itself is still classic card rails, but the
-        funding source lives on-chain.
-      </p>
-      <ul class="list">
-        <li>Stablecoins parked in DeFi protocols</li>
-        <li>Lending/borrowing positions that back a card balance</li>
-        <li>Yield strategies that auto-top-up a spendable wallet</li>
-        <li>DeFi wallets that issue or connect to physical/virtual cards</li>
-      </ul>
-    </section>
-
-    <!-- High-level DeFi -> card models -->
-    <section class="section">
-      <h2>Common DeFi → card funding models</h2>
-      <div class="cluster-grid">
-        <div class="cluster-card">
-          <h3>Stablecoin wallet + card</h3>
-          <p class="small">
-            You hold USDC/USDT or other stablecoins; provider converts to fiat at spend time or on top-up.
-          </p>
-        </div>
-        <div class="cluster-card">
-          <h3>Yield-backed balance</h3>
-          <p class="small">
-            Yield from DeFi strategies feeds a separate spend wallet that powers a linked card.
-          </p>
-        </div>
-        <div class="cluster-card">
-          <h3>Debt-backed card</h3>
-          <p class="small">
-            Your DeFi collateral backs a credit line that is drawn when you swipe the card.
-          </p>
-        </div>
-        <div class="cluster-card">
-          <h3>Hybrid CeFi/DeFi card</h3>
-          <p class="small">
-            Exchange or fintech provides the card, while part of treasury sits in DeFi strategies.
-          </p>
-        </div>
+      <div class="hero-content">
+        <h1>How DeFi-Linked Card Payments Actually Work</h1>
+        <p class="hero-lead">
+          DeFi-backed cards route spending through smart-contract wallets, stablecoin balances or yield-bearing accounts. Here’s what happens from tap to settlement.
+        </p>
+        <a class="cta" href="https://choose.creditcard/?utm_source=defipay.creditcard&utm_medium=referral&utm_campaign=hero_cta">
+          Compare DeFi-linked credit cards
+        </a>
       </div>
     </section>
 
-    <!-- Who is in the chain -->
+    <!-- Content Section -->
+    <section id="overview" class="section">
+      <h2>What Is a DeFi-Linked Card?</h2>
+      <p>A DeFi-linked card lets you spend from a crypto wallet or yield-bearing DeFi account while merchants still receive fiat via traditional card rails. The “DeFi” part happens behind the scenes: stablecoins or tokens are converted, routed or collateralized before reaching settlement.</p>
+      <p>Most cards don’t perform on-chain transactions at checkout. Instead, the issuer holds custody or connects to a smart-contract account that fronts liquidity and settles later.</p>
+    </section>
+
+    <section id="mechanics" class="section">
+      <h2>How DeFi Card Mechanics Work</h2>
+      <p>Behind the scenes, a DeFi card provider often:</p>
+      <ul class="list">
+        <li>Maintains a custodial or semi-custodial smart-contract wallet.</li>
+        <li>Checks available balance in stablecoins, tokens or collateralized positions.</li>
+        <li>Executes conversion routes (e.g., DAI → USDC → fiat) either instantly or preloaded.</li>
+        <li>Approves the transaction on traditional card rails.</li>
+      </ul>
+      <p>Some products integrate yield routing: unspent funds earn interest or yield in liquidity pools until they are used for a transaction.</p>
+    </section>
+
     <section class="section">
-      <h2>Who sits in the DefiPay chain?</h2>
+      <h2>Stablecoin Routes and Pricing</h2>
+      <p>Most DeFi cards rely on stablecoins for predictable settlement. A common flow is:</p>
+      <ul class="list">
+        <li>Wallet holds DAI, USDC, USDT or a mix.</li>
+        <li>Routing contract converts to a preferred settlement coin.</li>
+        <li>Issuer sells stablecoin to fiat for merchant settlement.</li>
+      </ul>
+      <p>Different routes produce different spreads, fees and slippage characteristics depending on liquidity and the DEX or aggregator used.</p>
+    </section>
+
+    <section class="section">
+      <h2>Yield, Vaults and Earn Features</h2>
+      <p>Some DeFi-linked cards advertise yield: your stablecoins are placed in a vault or liquidity pool until you spend. But yield comes with:</p>
+      <ul class="list">
+        <li>Smart-contract risk.</li>
+        <li>Impermanent loss if tokens are paired.</li>
+        <li>Custody risk if assets are pooled or rehypothecated.</li>
+        <li>Variable APY depending on market conditions.</li>
+      </ul>
+      <p>If the vault underperforms or fails, card spending may be delayed or disabled.</p>
+    </section>
+
+    <section class="section">
+      <h2>Fees, Slippage and Smart-Contract Risk</h2>
+      <p>DeFi cards can introduce additional cost layers compared to standard crypto cards:</p>
+      <ul class="list">
+        <li>DEX slippage on stablecoin swaps.</li>
+        <li>Gas fees if on-chain rebalancing is needed.</li>
+        <li>Yield routing fees or vault withdrawal penalties.</li>
+        <li>Network congestion delays on non-custodial designs.</li>
+      </ul>
+      <p>Because merchants still settle in fiat, these costs affect the user—not the merchant.</p>
+    </section>
+
+    <!-- Comparison block -->
+    <section id="compare" class="section">
+      <h2>Comparing DeFi Card Designs</h2>
       <div class="table-wrap">
         <table class="table">
           <thead>
-          <tr>
-            <th>Layer</th>
-            <th>Role</th>
-            <th>Key questions</th>
-          </tr>
+            <tr>
+              <th>Design</th>
+              <th>Mechanic</th>
+              <th>Strength / Risk</th>
+            </tr>
           </thead>
           <tbody>
-          <tr>
-            <td>DeFi protocol</td>
-            <td>Holds or manages your on-chain assets (lending, LP, staking).</td>
-            <td>Smart-contract risk? Audits? Liquidity? Governance?</td>
-          </tr>
-          <tr>
-            <td>Wallet / app</td>
-            <td>UI that connects DeFi balances to a spendable account.</td>
-            <td>Who controls keys? Non-custodial or custodial?</td>
-          </tr>
-          <tr>
-            <td>Card issuer / programme</td>
-            <td>Issues the physical/virtual card, sets limits and KYC.</td>
-            <td>Which region? Protections? Chargeback rights?</td>
-          </tr>
-          <tr>
-            <td>Processor &amp; network</td>
-            <td>Runs the authorisation and clearing on standard card rails.</td>
-            <td>Any extra fees, cross-border rules, blocked MCCs?</td>
-          </tr>
-          <tr>
-            <td>Bridge / off-ramp</td>
-            <td>Converts DeFi assets and stablecoins into fiat funding.</td>
-            <td>Spread, fees, settlement delays, regulatory status?</td>
-          </tr>
+            <tr>
+              <td>Custodial DeFi Card</td>
+              <td>Issuer holds assets, converts/stakes centrally</td>
+              <td>Simple UX but centralization risk</td>
+            </tr>
+            <tr>
+              <td>Smart-Contract Vault Card</td>
+              <td>Funds stored in a contract; routed when spending</td>
+              <td>Transparent logic, but contract risk</td>
+            </tr>
+            <tr>
+              <td>Multi-Asset Routing Card</td>
+              <td>On-demand conversion across assets</td>
+              <td>More flexibility, more slippage exposure</td>
+            </tr>
+            <tr>
+              <td>Yield-Integrated Card</td>
+              <td>Portfolio earns yield until used</td>
+              <td>Higher APY but delayed access during volatility</td>
+            </tr>
           </tbody>
         </table>
       </div>
-    </section>
 
-    <!-- Why it matters -->
-    <section class="section">
-      <h2>Why DefiPay design matters for users</h2>
       <p class="small">
-        Two cards can look similar in the app but behave very differently once you look at the rails:
+        To compare DeFi-friendly cards and stablecoin routes, visit
+        <a href="https://choose.creditcard/?utm_source=defipay.creditcard&utm_medium=referral&utm_campaign=comparison_section">
+          Choose.Creditcard
+        </a>.
       </p>
-      <ul class="list">
-        <li>Fee and spread structures hide in different parts of the chain</li>
-        <li>Regulatory protections depend on where custody and issuing sit</li>
-        <li>APY on DeFi side can be offset by conversion costs on the card side</li>
-        <li>Limits and region availability follow issuer rules, not on-chain balances</li>
-        <li>Tax treatment of every conversion depends on your jurisdiction</li>
-      </ul>
-    </section>
-
-    <!-- DefiPay patterns & examples -->
-    <section class="section">
-      <h2>DefiPay-style product patterns</h2>
-      <div class="cluster-grid">
-        <div class="cluster-card">
-          <h3>“Spend your yield” cards</h3>
-          <p class="small">
-            Principal stays in DeFi; only yield is moved or used to top up a fiat wallet behind the card.
-          </p>
-        </div>
-        <div class="cluster-card">
-          <h3>Stablecoin salary → card</h3>
-          <p class="small">
-            Income arrives in stablecoins, routes through DeFi, then funds a low-fee card for everyday spend.
-          </p>
-        </div>
-        <div class="cluster-card">
-          <h3>DAO / treasury cards</h3>
-          <p class="small">
-            Organisations keep treasury in DeFi and use cards for ops, travel and expenses.
-          </p>
-        </div>
-        <div class="cluster-card">
-          <h3>On-chain loyalty + DeFi</h3>
-          <p class="small">
-            Cashback and rewards in tokens that can be staked or lent back into DeFi strategies.
-          </p>
-        </div>
-      </div>
     </section>
 
     <!-- Cluster links -->
     <section class="section">
-      <h2>The DeFi &amp; rails domain cluster</h2>
-      <p class="small">Explore related domains in The CreditCard Collection:</p>
+      <h2>Explore Related Crypto Microsites</h2>
       <div class="cluster-grid">
-        <a class="cluster-card"
-           href="https://cryptopay.creditcard/?utm_source=defipay.creditcard&utm_medium=referral&utm_campaign=cryptopay">
-          <h3>CryptoPay.creditcard</h3>
-          <p class="small">Broader view of crypto-to-card models and spreads.</p>
+        <a class="cluster-card" href="https://cryptopay.creditcard/?utm_source=defipay.creditcard&utm_medium=referral&utm_campaign=cluster_cryptopay">
+          <h3>CryptoPay.Creditcard</h3>
+          <p>General crypto-linked card systems and flows.</p>
         </a>
-        <a class="cluster-card"
-           href="https://chainpay.creditcard/?utm_source=defipay.creditcard&utm_medium=referral&utm_campaign=chainpay">
-          <h3>ChainPay.creditcard</h3>
-          <p class="small">End-to-end view of on-chain to off-chain payment rails.</p>
+        <a class="cluster-card" href="https://bitcoinpay.creditcard/?utm_source=defipay.creditcard&utm_medium=referral&utm_campaign=cluster_bitcoinpay">
+          <h3>BitcoinPay.Creditcard</h3>
+          <p>Bitcoin-backed cards and settlement flows.</p>
         </a>
-        <a class="cluster-card"
-           href="https://tokens.creditcard/?utm_source=defipay.creditcard&utm_medium=referral&utm_campaign=tokens">
-          <h3>Tokens.creditcard</h3>
-          <p class="small">How tokens, virtual cards and loyalty interact.</p>
+        <a class="cluster-card" href="https://btcpay.creditcard/?utm_source=defipay.creditcard&utm_medium=referral&utm_campaign=cluster_btcpay">
+          <h3>BTCPay.Creditcard</h3>
+          <p>Merchant BTC processing and acceptance models.</p>
         </a>
-        <a class="cluster-card"
-           href="https://tech.creditcard/crypto?utm_source=defipay.creditcard&utm_medium=referral&utm_campaign=tech_crypto">
-          <h3>Tech.Creditcard / Crypto rails</h3>
-          <p class="small">Technical deep dive into tokenization and on/off-ramps.</p>
+        <a class="cluster-card" href="https://tokens.creditcard/?utm_source=defipay.creditcard&utm_medium=referral&utm_campaign=cluster_tokens">
+          <h3>Tokens.Creditcard</h3>
+          <p>Token-based rewards and incentive systems.</p>
+        </a>
+        <a class="cluster-card" href="https://digi.creditcard/?utm_source=defipay.creditcard&utm_medium=referral&utm_campaign=cluster_digi">
+          <h3>Digi.Creditcard</h3>
+          <p>Digital payment infrastructure and rails.</p>
         </a>
       </div>
     </section>
 
-    <!-- CTA bottom -->
+    <!-- Collection section -->
     <section class="section">
-      <h2>Finding the right DeFi-aware card</h2>
+      <h2>Part of The CreditCard Collection</h2>
       <p class="small">
-        DefiPay.creditcard explains how DeFi value reaches real-world payments.<br />
-        To compare concrete card products, regions, fees and rewards:
+        DefiPay.Creditcard is the decentralized-finance spoke in <strong>The CreditCard Collection</strong> — a network of narrowly focused financial microsites operated by ronarn AS.
       </p>
-      <a class="cta"
-         href="https://choose.creditcard/?utm_source=defipay.creditcard&utm_medium=referral&utm_campaign=defipay_bottom">
-        Open Compare on Choose.Creditcard
-      </a>
+      <p class="small">
+        We explain how DeFi cards, stablecoin rails and smart-contract wallets interact with traditional payment networks — without offering financial advice or selling products.
+      </p>
+      <p class="small">
+        To compare real card products, APR, rewards and crypto compatibility, visit
+        <a href="https://choose.creditcard/?utm_source=defipay.creditcard&utm_medium=referral&utm_campaign=collection_section">
+          Choose.Creditcard
+        </a>.
+      </p>
     </section>
 
+    <!-- Bottom CTA -->
+    <section class="section">
+      <h2>See Which Cards Plug Into DeFi</h2>
+      <p class="small">
+        Now that you understand the mechanics of DeFi-linked card payments, explore cards that support stablecoins, smart-contract routing or yield accounts.
+      </p>
+      <a class="cta" href="https://choose.creditcard/?utm_source=defipay.creditcard&utm_medium=referral&utm_campaign=bottom_cta">
+        Compare DeFi card options
+      </a>
+    </section>
   </main>
 
-  <!-- MINI FOOTER -->
   <footer class="mini-footer">
-    <p class="mini-footer-main">
-      © 2025 The CreditCard Collection — ronarn AS
-    </p>
+    <p class="mini-footer-main">© 2025 The CreditCard Collection — ronarn AS</p>
     <p class="mini-footer-contact">
       Contact: <a href="mailto:support@cc.creditcard">support@cc.creditcard</a>
     </p>
   </footer>
-
 </body>
 </html>
